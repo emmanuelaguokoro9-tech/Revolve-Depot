@@ -820,6 +820,7 @@ p{margin:0}
 /* ---------- Showroom zones gallery ---------- */
 .zones-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--s4)}
 .zone-card{position:relative;border-radius:14px;overflow:hidden;aspect-ratio:4/3.3;box-shadow:var(--shadow-sm);transition:transform .35s var(--ease),box-shadow .35s var(--ease)}
+.zone-card__photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
 .zone-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-lg)}
 .zone-card::before{content:"";position:absolute;inset:0;z-index:1}
 .zone-card::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,6,77,.08) 30%,rgba(11,6,77,.88) 100%);z-index:2}
@@ -1398,6 +1399,7 @@ p{margin:0}
 
     <div class="zones-grid">
       <a class="zone-card z1" href="Shop.html?category=Tiles" data-reveal>
+        <img class="zone-card__photo" src="images/Tiles.jpg" alt="Tile Showroom" loading="lazy" onerror="this.style.display='none'">
         <div class="zone-card__body">
           <span class="zone-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></span>
           <h3>Tile Showroom</h3>
@@ -1405,6 +1407,7 @@ p{margin:0}
         </div>
       </a>
       <a class="zone-card z2" href="Shop.html?category=Bathrooms" data-reveal>
+        <img class="zone-card__photo" src="images/WCs, basins, showers & taps.jpg" alt="Bathroom Display" loading="lazy" onerror="this.style.display='none'">
         <div class="zone-card__body">
           <span class="zone-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 12h16a1 1 0 0 1 1 1 6 6 0 0 1-6 6H9a6 6 0 0 1-6-6 1 1 0 0 1 1-1z"/><path d="M7 12V6a2 2 0 0 1 4 0"/></svg></span>
           <h3>Bathroom Display</h3>
@@ -1412,6 +1415,7 @@ p{margin:0}
         </div>
       </a>
       <a class="zone-card z3" href="Shop.html?category=Doors" data-reveal>
+        <img class="zone-card__photo" src="images/Wooden, steel, PVC & frames.jpg" alt="Door Gallery" loading="lazy" onerror="this.style.display='none'">
         <div class="zone-card__body">
           <span class="zone-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="2" width="14" height="20" rx="1.2"/><circle cx="15" cy="12" r="1" fill="currentColor"/></svg></span>
           <h3>Door Gallery</h3>
@@ -1419,6 +1423,7 @@ p{margin:0}
         </div>
       </a>
       <a class="zone-card z4" href="Shop.html?category=Cement" data-reveal>
+        <img class="zone-card__photo" src="images/Warehouse 3.jpg" alt="Cement Yard" loading="lazy" onerror="this.style.display='none'">
         <div class="zone-card__body">
           <span class="zone-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 8h16v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M7 8V6a3 3 0 0 1 3-3h4a3 3 0 0 1 3 3v2"/></svg></span>
           <h3>Cement Yard</h3>
